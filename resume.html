@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dileep Kumar - CS Student Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #3498db;
+      --text-color: #333;
+      --light-bg: #f9f9f9;
+      --border-color: #e0e0e0;
+    }
+
+    * {
+      margin: 2px;
+      padding: 2px;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--light-bg);
+      padding: 1.25rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      padding: 2.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--secondary-color);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+
+    .quick-nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .quick-nav a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .quick-nav a:hover {
+      color: var(--secondary-color);
+      text-decoration: underline;
+    }
+
+    .main-content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .left-column, .right-column {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--secondary-color);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .item h3, .project h3 {
+      font-size: 1.1rem;
+    }
+
+    .institution, .tech-stack, .duration {
+      color: var(--secondary-color);
+      font-weight: 500;
+    }
+
+    .skills-list {
+      list-style: none;
+    }
+
+    .skills-list li::before {
+      content: '•';
+      color: var(--secondary-color);
+      margin-right: 0.5rem;
+    }
+
+    .footer-links {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .download-btn,.home-btn {
+      display: inline-block;
+      background-color: var(--secondary-color);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      margin: 0.5rem;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .download-btn,.home-btn:hover {
+      background-color: #219653;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        grid-template-columns: 1fr;
+      }
+      .contact-info {
+        flex-direction: column;
+        align-items: center;
+      }
+      .quick-nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    }
+
+    @media print {
+      .quick-nav, .footer-links, .download-btn, .home-btn, footer {
+        display: none !important;
+      }
+
+      body {
+        padding: 0;
+        font-size: 12pt;
+        line-height: 1.4;
+      }
+
+      .container {
+        box-shadow: none;
+        max-width: 100%;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <h1>Dileep Kumar Bardhan</h1>
+      </div>
+      <p class="subtitle">Computer Science Student</p>
+      <div class="contact-info">
+        <a href="tel:+916395019361">📱 +91 6395019361</a>
+        <a href="mailto:dilipkumar8923@gmail.com">✉️ dilipkumar8923@gmail.com</a>
+        <a href="https://github.com/dilipkumar005" target="_blank">💻 github.com/dilipkumar005</a>
+      </div>
+    </header>
+
+    <nav class="quick-nav">
+      <a href="#summary">Summary</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+    </nav>
+
+    <section id="summary" class="summary">
+      <h2>Professional Summary</h2>
+      <p>Enthusiastic and goal-oriented postgraduate Master of Computer Applications, seeking an entry-level opportunity to apply my academic knowledge, enhance my technical skills, and contribute meaningfully to a dynamic and growth-focused organization.</p>
+    </section>
+
+    <div class="main-content">
+      <div class="left-column">
+        <section id="education" class="education">
+          <h2>Education</h2>
+          <div class="item">
+            <h3>MCA</h3>
+            <p class="institution">Dr. A. P. J. Abdul Kalam Technical University, Lucknow</p>
+            <p class="details">Expected Graduation: 2025</p>
+          </div>
+          <div class="item">
+            <h3>B.Sc. Computer Science</h3>
+            <p class="institution">Dr. Bhimrao Ambedkar University</p>
+            <p class="details">Graduation: 2023</p>
+          </div>
+        </section>
+
+        <section id="skills" class="skills">
+          <h2>Technical Skills</h2>
+          <ul class="skills-list">
+            <li>Programming: C, Java</li>
+            <li>Web: HTML5, CSS3</li>
+            <li>Database: MySQL</li>
+            <li>Tools: VS Code, Android Studio</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="right-column">
+        <section id="projects" class="projects">
+          <h2>Projects</h2>
+          <div class="project">
+            <h3>Todo List App</h3>
+            <p class="tech-stack">Java, SQlite</p>
+            <p class="description">A simple Android To-Do application that allows users to manage their tasks efficiently. This app uses SQLite for local data storage and implements a clean user interface with Material Design components.</p>
+          </div>
+          <div class="project">
+            <h3>E-commerce Website</h3>
+            <p class="tech-stack">HTML, CSS, JavaScript</p>
+            <p class="description">Developed Comfort Learning, an educational e-commerce website using HTML, CSS, and JavaScript.</p>
+          </div>
+        </section>
+
+        <section id="experience" class="experience">
+          <h2>Internship</h2>
+          <div class="item">
+            <h3>TechSaksham</h3>
+            <p class="duration">2025 | AI-Powered Health Assistant</p>
+            <p class="description">Built an AI-powered health assistant during the AICTE TechSaksham internship, focusing on healthcare solutions using machine learning and NLP. Gained practical experience in AI application and collaborative problem-solving.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Android App Development - Udemy (2024)</li>
+        <li>CCC Certification - NIELIT</li>
+      </ul>
+    </section>
+
+    <section class="languages">
+      <h2>Languages Known</h2>
+      <ul>
+        <li>Hindi</li>
+        <li>English</li>
+      </ul>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <button id="homeBtn" class="home-btn" onclick="window.location.href='index.html';">Home</button>
+        <button id="printBtn" class="download-btn">Print</button>
+      </div>
+      <p style="text-align:center;">© <span id="currentYear"></span> Dileep Kumar Bardhan. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Set current year
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const target = document.querySelector(link.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+      // Print
+      document.getElementById('printBtn').addEventListener('click', () => {
+        window.print();
+      });
+    });
+  </script>
+</body>
+</html>
